@@ -17,13 +17,13 @@ print(name + " Connected!!!")
 #
 
 
-BNOf = open(name + time.strftime('%d-%m-%Y-%H-%M-%S', time.localtime()) + "." + str(int(round(time.time() * 1000))) + ".csv", "a+")
+BNOf = open(name + time.strftime('%d-%m-%Y-%H-%M-%S', time.localtime()) + "." + str(int(round(time.time() * 1000)))[-4:] + ".csv", "a+")
 
 while True:
 #    print("waiting")
     result =  ws.recv()
 #    print(result)
-    BNOf.write(result)
+    BNOf.write(str(int(round(time.time() * 1000))) + "\n" + result)
 #    print(time.strftime('%d-%m-%Y-%H-%M-%S', time.localtime()) + "." + str(int(round(time.time() * 1000))))
 #    print(len(result.split("\n")))
     #got a packet
@@ -31,4 +31,10 @@ while True:
     #append to relevant files
     #sendo to other processes
     #wait again
+
+
+#firmware todo's
+    #implement tls
+    #implement NTP time
+    #implement data permisionning and encryption
 
