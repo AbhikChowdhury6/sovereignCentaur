@@ -1,8 +1,8 @@
 #!/bin/bash
 baseDirectory=$1
 
-runFileName="$baseDirectory/sovreignCentaur/IMURun.sh"
-loggingFileName="$baseDirectory/sovreignCentaur/IMUlog.py"
+runFileName="$baseDirectory/sovereignCentaur/IMURun.sh"
+loggingFileName="$baseDirectory/sovereignCentaur/IMUlog.py"
 
 
 trap 'kill %1; kill %2; kill %3; kill %4; kill %5; kill %6; kill %7; kill %8; kill %9; kill %10' SIGINT
