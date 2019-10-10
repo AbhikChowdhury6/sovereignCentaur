@@ -16,7 +16,7 @@
     # city of residence
     # list of relationship tags ex. friend, father, boss, ex boss, mentor
 
-    
+
 
 
 #events
