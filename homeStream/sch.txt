@@ -1,0 +1,42 @@
+#I want
+    Client:
+        capture frame
+        signal analysis
+        if nothing then wait 1 sec
+        send frame
+    server:
+        Get frame from camera
+        save that frame
+        prcess that data and serve it
+            
+
+#install opencv
+#install clinet program
+#modify rc.local to autostart
+
+
+
+#Client
+    #capture frame
+    #compare to previous frame
+        #if similar then wait a sec
+    #send frame with the time of capture and name of camera
+
+
+#server
+    #recive frame
+    #save in file system
+    #make available to other processes
+        # get cameras
+        # request livestream from a camera
+        # list of cameras with motion
+
+#person attentoin service
+    #shows all of the person related data streams
+
+
+#securty program 
+    #logic to determine which cameras have me in them and if there's movement on any others
+
+
+on V2 install tensorflow as well

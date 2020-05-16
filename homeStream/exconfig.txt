@@ -1,0 +1,8 @@
+
+#things to include
+    #fps INT
+    #server to send to STRING
+    #port to send to INT
+    #log locally BOOL
+    #resolution W INT
+    #resolution H INT

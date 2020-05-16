@@ -1,0 +1,34 @@
+#sensor -> device -> thalmic nuclei -> 
+
+#sensor is an arbitrary schematized datastream and individually and dynamically configurable
+    #i.e. triggered video that is configurable
+
+    #abstract sensory organ description
+        #max framerate
+        #max resolution
+        #general harware API
+
+    #first layer feature extractor
+        #is there movement
+        #otherwize just stay kindof aware
+        #have a conrol API as well to configure attention and interface with the lower level feature generator
+
+    #first layer debugging and test API
+        #save datastreams
+        #view and vizualize datastreams
+        #configure properties
+
+
+    #second layer feature extractor
+        #is there a person in this shot
+    
+    #third layer
+        #who is the person by image individually
+
+    #fourth layer  
+        # what is the pose of the person in this image
+
+    #fifth layer activity analyzer
+
+
+#girst generic io unit
