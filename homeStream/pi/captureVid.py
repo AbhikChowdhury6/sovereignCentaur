@@ -8,7 +8,7 @@ sensorName = "camera"
 #save format
 #utctimestapwithms-sensorname
 
-thresh = 1000
+thresh = 10000
 
 cam = cv2.VideoCapture(0)
 
@@ -31,7 +31,7 @@ while True:
         ret, frame = cam.read()
         smallFrame = imutils.resize(frame, height=64, width=128)
         graySmallFrame = cv2.cvtColor(smallFrame, cv2.COLOR_BGR2GRAY)
-        totalDelta = sum(cv2.absdiff(graySmallStartFrame, graySmallFrame))
+        totalDelta = sum(sum(cv2.absdiff(graySmallStartFrame, graySmallFrame)))
         print(totalDelta)
         if totalDelta > thresh:
             cv2.imwrite("/home/pi/data/" + str(time.time()) + "-" + sensorName +".jpg", frame)
