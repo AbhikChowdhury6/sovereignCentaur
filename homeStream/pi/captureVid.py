@@ -19,7 +19,7 @@ cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
 while True:
     #first frame will be the refrence one and saved
-    startFrame = cam.read()
+    ret, startFrame = cam.read()
     #save frame
     cv2.imwrite("/home/pi/data/" + str(time.time()) + "-" + sensorName +".jpg", startFrame)
     smallStartFrame = imutils.resize(startFrame, height=64, width=128)
@@ -28,7 +28,7 @@ while True:
     #diff and threshold will be calculated for each subsequent frame and saved
     for i in range(1000):
         lastTime = time.time()
-        frame = cam.read()
+        ret, frame = cam.read()
         smallFrame = imutils.resize(frame, height=64, width=128)
         graySmallFrame = cv2.cvtColor(smallFrame, cv2.COLOR_BGR2GRAY)
         totalDelta = sum(cv2.absdiff(graySmallStartFrame, graySmallFrame))
