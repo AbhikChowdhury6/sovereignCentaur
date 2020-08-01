@@ -33,4 +33,4 @@ sudo pip3 install opencv-contrib-python==3.4.3.18
 
 
 #show command to insert into rc.local
-echo "cd /home/pi/soverignCentaur/homeStream && python3 Jonathan Le Rou.py &"
+echo "cd /home/pi/soverignCentaur/homeStream && python3 main.py &"
