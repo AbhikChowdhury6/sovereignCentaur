@@ -12,6 +12,11 @@ while True:
 
     #parse out time and generate filepath
     #iterate over lists and extract the year, month, day, hour, minute and sensorname
+    for fn in folderContentslist:
+        arr = fn.split("-")
+        
+        arr
+        0]
     
     while True:
         #based on the sensorname generate commands that group files into sets of 100 send and delete originals
